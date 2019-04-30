@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    height: 55px;
+    width: 100%;
+    font-size: 1.35em;
+    font-weight: 700;
+    line-height: 0.1em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    align-items: center; 
+    justify-content: space-between;
+}
+
+header .left {
+    display: flex;
+    align-items: center; 
+}
+
+header img {
+    margin: 0 20px;
+}
+
+main {
+    display: flex;
+    padding: 50px 30px 30px 30px;
+}
+
+.left-block {
+    width: 50%;
+}
+
+.right-block {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.bord {
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 50px;
+    width: 250px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    font-size: 1.1em;
+}
+
+.bord p {
+    padding: 0;
+    margin: 0;
+}
+
+.bord img {
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.bord button {
+    width: 250px;
+    height: 40px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    text-align: left;
+    font-size: 1.1em;
+}
+
+.color {
+    width: 45px;
+    height: 45px;
+    border-radius: 13px;
+    margin-right: 15px;
+}
+
+.color-top {
+    width: 25px;
+    height: 25px;
+    border-radius: 13px;
+    margin-right: 15px;
+}
+
+.colors > div {
+    display: flex;
+    padding: 10px 0 10px 0;
+}
+
+.colors > div > .red {
+    background-color: red;
+    padding: 0;
+    margin: 10px; 
+}
+
+.colors > div > .green {
+    background-color: green;
+    padding: 0;
+    margin: 10px; 
+}
+
+.colors > div > .blue {
+    background-color: blue;
+    padding: 0;
+    margin: 10px; 
+}
+
+.colors > div > .grey {
+    background-color: grey;
+    padding: 0;
+    margin: 10px; 
+}
+
+.canvas {
+    display: grid;
+    grid-template-columns: 170px 170px 170px;
+    grid-template-rows: 170px 170px 170px;
+    min-width: 30em;
+    min-height: 30em;
+    grid-gap: 10px 10px;
+}
+
+.canvas div{
+    background-color: rgb(177, 177, 177);
+}
+
+.current {
+    background-color: grey;
+}
+
+.prev {
+    background-color: grey;
+}
+
+span {
+    font-size: 0.5em;
+    color: grey;
+}
