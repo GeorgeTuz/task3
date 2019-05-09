@@ -37,7 +37,7 @@ main {
 .right-block {
     width: 50%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .bord {
@@ -104,34 +104,122 @@ main {
     margin: 10px; 
 }
 
-.colors > div > .grey {
-    background-color: grey;
+.colors > div > .gray {
+    background-color: gray;
     padding: 0;
     margin: 10px; 
 }
 
 .canvas {
-    display: grid;
-    grid-template-columns: 170px 170px 170px;
-    grid-template-rows: 170px 170px 170px;
+    display: block;
     min-width: 30em;
     min-height: 30em;
-    grid-gap: 10px 10px;
+    position: relative;
 }
 
-.canvas div{
+.block {
+    position: absolute;
+}
+
+.one {
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    margin: 2px;
     background-color: rgb(177, 177, 177);
 }
 
+.two {
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    margin: 2px;
+    background-color: rgb(177, 177, 177);
+    top: 0px;
+    left: 176px;
+}
+
+.tree {
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    margin: 2px;
+    background-color: rgb(177, 177, 177);
+    top: 0px;
+    left: 352px;
+}
+
+.four {
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    margin: 2px;
+    background-color: rgb(177, 177, 177);
+    top: 176px;
+    left: 0px;
+}
+
+.five {
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    margin: 2px;
+    background-color: rgb(177, 177, 177);
+    top: 176px;
+    left: 176px;
+}
+
+.six {
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    margin: 2px;
+    background-color: rgb(177, 177, 177);
+    top: 176px;
+    left: 352px;
+}
+
+.seven {
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    margin: 2px;
+    background-color: rgb(177, 177, 177);
+    top: 352px;
+    left: 0px;
+}
+
+.eight {
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    margin: 2px;
+    background-color: rgb(177, 177, 177);
+    top: 352px;
+    left: 176px;
+}
+
+.nine {
+    display: inline-block;
+    width: 170px;
+    height: 170px;
+    margin: 2px;
+    background-color: rgb(177, 177, 177);
+    top: 352px;
+    left: 352px;
+}
+
+
+
 .current {
-    background-color: grey;
+    background-color: gray;
 }
 
 .prev {
-    background-color: grey;
+    background-color: gray;
 }
 
 span {
     font-size: 0.5em;
-    color: grey;
+    color: gray;
 }
