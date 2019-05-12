@@ -2,9 +2,10 @@ body {
     margin: 0;
     padding: 0;
     font-family: Verdana, sans-serif;
+    min-width: 950px;
 }
 
-header {
+.header {
     display: flex;
     height: 55px;
     width: 100%;
@@ -16,28 +17,28 @@ header {
     justify-content: space-between;
 }
 
-header .left {
+.header__logo {
     display: flex;
     align-items: center; 
 }
 
-header img {
+.header__img {
     margin: 0 20px;
 }
 
-main {
+.main {
     display: flex;
-    padding: 50px 30px 30px 30px;
+    padding: 50px 50px 30px 30px;
 }
 
-.left-block {
+.palette {
     width: 50%;
 }
 
-.right-block {
+.container {
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .bord {
@@ -53,7 +54,7 @@ main {
     margin: 0;
 }
 
-.bord img {
+.button__img {
     margin-right: 15px;
     vertical-align: middle;
 }
@@ -86,25 +87,25 @@ main {
     padding: 10px 0 10px 0;
 }
 
-.colors > div > .red {
+.red {
     background-color: red;
     padding: 0;
     margin: 10px; 
 }
 
-.colors > div > .green {
+.green {
     background-color: green;
     padding: 0;
     margin: 10px; 
 }
 
-.colors > div > .blue {
+.blue {
     background-color: blue;
     padding: 0;
     margin: 10px; 
 }
 
-.colors > div > .gray {
+.gray {
     background-color: gray;
     padding: 0;
     margin: 10px; 
@@ -112,8 +113,8 @@ main {
 
 .canvas {
     display: block;
-    min-width: 30em;
-    min-height: 30em;
+    min-width: 33em;
+    min-height: 33em;
     position: relative;
 }
 
@@ -208,8 +209,6 @@ main {
     top: 352px;
     left: 352px;
 }
-
-
 
 .current {
     background-color: gray;

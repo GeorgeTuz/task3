@@ -8,24 +8,24 @@
     <title>dom Palette</title>
 </head>
 <body>
-    <header>
-        <div class="left">
-            <img src="palette/assets/img/Shape.png" alt="menu">
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__img" src="palette/assets/img/HamburgerMenu.png" alt="Menu button">
             <p>CodeJam Palette</p></div>
-        <div class="right"> 
-            <img src="palette/assets/img/Shap.png" alt="menu"> 
+        <div class="header__context-menu"> 
+            <img class="header__img" src="palette/assets/img/ContextMenu.png" alt="Context menu button"> 
         </div>
     </header>
-    <main>
-        <div class="left-block">
-            <div class="palette bord">
-                <p><button onclick="zalivka_cursor()"><img src="palette/assets/img/i1.png" alt="Bucket"> Paint bucket <span> (Press key - '1')</span></button></p>
-                <p><button onclick="pipetka_cursor()"><img src="palette/assets/img/i2.png" alt="Choose color"> Choose color <span> (Press key - '2')</span></button></p>
+    <main class="main">
+        <div class="palette">
+            <div class="bord">
+                <p><button onclick="bucketCursor()"><img class="button__img" src="palette/assets/img/Bucket.png" alt="Button - 'Paint bucket'"> Paint bucket <span> (Press key - '1')</span></button></p>
+                <p><button onclick="chooseColorCursor()"><img class="button__img" src="palette/assets/img/ChooseColor.png" alt="Button - 'Choose color'"> Choose color <span> (Press key - '2')</span></button></p>
                 <hr>
-                <p><button onclick="move_cursor()"><img src="palette/assets/img/i3.png" alt="Move"> Move <span> (Press key - '3')</span></button></p>
-                <p><button onclick="transform_cursor()"><img src="palette/assets/img/i4.png" alt="Transform"> Transform <span> (Press key - '4')</span></button></p>
+                <p><button onclick="moveCursor()"><img class="button__img" src="palette/assets/img/Move.png" alt="Button - 'Move'"> Move <span> (Press key - '3')</span></button></p>
+                <p><button onclick="transformCursor()"><img class="button__img" src="palette/assets/img/Transform.png" alt="Button - 'Transform'"> Transform <span> (Press key - '4')</span></button></p>
             </div>
-            <div class="colors bord">
+            <div class="bord colors">
                 <div><div class="current color-top" id="current"></div> Current color</div>
                 <div><div class="prev color-top" id="prev"></div> Prev color</div>
                 <hr>
@@ -37,8 +37,7 @@
                 </div>
             </div>
         </div>
-        
-        <div class="right-block">
+        <div class="container">
             <div class="canvas" id="canvas">
                 <div>
                     <div class="block one" id="one"></div>
